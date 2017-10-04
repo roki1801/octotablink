@@ -1,0 +1,18 @@
+{
+  "name": "Octotablink",
+  "version": "0.9.0",
+  "manifest_version": 2,
+  "description": "Open the link in github in another tab",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["js/jquery-3.2.1.min.js", "js/main.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
